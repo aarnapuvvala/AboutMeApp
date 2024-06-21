@@ -10,12 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ZStack(){
+                VStack(){
+                    HStack(){
+                        Image("basketball")
+                        
+                    }
+                }
+            }
+            
+            
+            //basketball
+            ZStack(){
+                VStack(){
+                    HStack(){
+                        Image("basketball")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                   }
+                }
+                
+
+                
+                VStack(alignment: .center){
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
